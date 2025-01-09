@@ -34,3 +34,34 @@ function updateTimer() {
 
 const timerInterval = setInterval(updateTimer, 1000);
 updateTimer(); // Initialize immediately
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const ship = document.querySelector(".ship");
+
+    // Function to reset and trigger the animation
+    function resetShipAnimation() {
+        // Remove the animation
+        ship.style.animation = 'none';
+        
+        // Trigger a reflow to reset the animation
+        ship.offsetHeight; // Forces a reflow, causing the animation to restart
+        
+        // Add the animation again
+        ship.style.animation = 'moveShip 5s linear forwards'; // Restart the animation
+    }
+
+    // Set up IntersectionObserver to observe the About section
+    const aboutSection = document.getElementById("about");
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Reset the animation each time the About section comes into view
+                resetShipAnimation();
+            }
+        });
+    }, { threshold: 0.5 }); // Trigger when 50% of the About section is visible
+
+    observer.observe(aboutSection);
+});
