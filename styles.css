@@ -48,7 +48,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 #home::before {
@@ -214,83 +213,4 @@ body {
     height: auto;
     object-fit: cover;
     max-height: 300px; /* Set a maximum height for the images to fit within the section */
-}
-
-
-#about {
-    position: relative;
-    background-image: url("images/dragon.jpeg"); /* Set dragon as background image */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-    color:white; /* Prevent tiling */
-    background-attachment: fixed;
-    
-}
-
-#about .container {
-    position: relative; /* Ensure child elements are positioned properly */
-    z-index: 1; /* Keep content above the background */
-}
-
-#about::before {
-    content: ""; /* Create a pseudo-element for fading effect */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(6, 0, 0, 0.658); /* Adjust opacity for readability */
-    z-index: 0; /* Keep it behind the content */
-}
-
-#about h2,
-#about .gold-txt {
-    position: relative; /* Ensure the text stays above the background */
-    z-index: 1; /* Text above the pseudo-element */
-}
-
-.video {
-    width: 100%; /* Full width of the column */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a polished look */
-}
-
-
-
-
-.ship {
-    width: 700px; /* Adjust the size of the ship */
-    height: 300px;
-    position: absolute;
-    z-index: 1;
-    top: 20%; /* Move the ship higher (adjust percentage as needed) */
-    animation: moveShip 5s linear forwards; /* Ship moves from right to left */
-}
-
-
-@keyframes moveShip {
-    0% {
-        left: -800px; /* Start completely off-screen to the left */
-        transform: translateY(-10px); /* Optional: add a floating effect */
-    }
-    100% {
-        left: 100vw; /* Move completely off-screen to the right */
-        transform: translateY(10px); /* Optional: add a floating effect */
-    }
-}
-
-
-/* Text styling (no animation needed for the text) */
-h1 {
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    z-index: 2; /* Keep the text on top of the ship */
-}
-
-
-.position-relative {
-    position: relative;
 }
