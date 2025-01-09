@@ -298,10 +298,10 @@ h1 {
 
 
 #faq {
-    background-image: url('images/skull.avif');
+    background-image: url('images/bg.jpg');
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.286); /* Black overlay with 60% opacity */
+    background-color: rgba(0, 0, 0, 0); /* Black overlay with 60% opacity */
     background-blend-mode: overlay;
     color: #fff;
     background-attachment: fixed;
@@ -315,7 +315,7 @@ h1 {
 }
 
 .accordion-button {
-    background-color: #333 !important;
+    background-color: transparent !important; /* Fully transparent background */
     color: #fff !important;
     border: none;
     border-radius: 5px;
@@ -323,13 +323,13 @@ h1 {
 }
 
 .accordion-button:hover {
-    background-color: #000000 !important;
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background on hover */
     color: #ffdd00 !important;
 }
 
 /* Keep the button highlighted when its accordion is open */
 .accordion-button:not(.collapsed) {
-    background-color: #100101 !important;
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent background for active state */
     color: #ffdd00 !important;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(255, 221, 0, 0.5);
@@ -337,7 +337,7 @@ h1 {
 
 /* Accordion body styling */
 .accordion-body {
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.05); /* Very light transparent black background */
     color: #ccc;
     border-radius: 5px;
     padding: 1rem;
@@ -350,8 +350,8 @@ h1 {
 
 /* Wrapper styling */
 .col-auto {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding:1rem;
+    background-color: transparent; /* Fully transparent wrapper */
+    padding: 1rem;
     border-radius: 15px;
 }
 
