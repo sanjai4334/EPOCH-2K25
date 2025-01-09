@@ -178,7 +178,7 @@ body {
 .card-front {
     background: #2c2c2c;
     color: #d4af37;
-    background-image: url("images/skull.jpg");
+    background-image: url("images/skull.jpeg");
     /* Event background image */
     background-size: cover;
     background-position: center;
@@ -193,7 +193,7 @@ body {
 
 .card-back {
     background: #d4af37;
-    color: #2c2c2c;
+    color: #ffe7e700;
     transform: rotateY(180deg);
     padding: 30px;
     font-size: 1.2rem;
@@ -213,4 +213,158 @@ body {
     height: auto;
     object-fit: cover;
     max-height: 300px; /* Set a maximum height for the images to fit within the section */
+}
+
+
+#about {
+    position: relative;
+    background-image: url("images/dragon.jpeg"); /* Set dragon as background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    color:white; /* Prevent tiling */
+    background-attachment: fixed;
+    
+}
+
+#about .container {
+    position: relative; /* Ensure child elements are positioned properly */
+    z-index: 1; /* Keep content above the background */
+}
+
+#about::before {
+    content: ""; /* Create a pseudo-element for fading effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 0, 0, 0.658); /* Adjust opacity for readability */
+    z-index: 0; /* Keep it behind the content */
+}
+
+#about h2,
+#about .gold-txt {
+    position: relative; /* Ensure the text stays above the background */
+    z-index: 1; /* Text above the pseudo-element */
+}
+
+.video {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a polished look */
+}
+
+
+
+
+.ship {
+    width: 700px; /* Adjust the size of the ship */
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 20%; /* Move the ship higher (adjust percentage as needed) */
+    animation: moveShip 5s linear forwards; /* Ship moves from right to left */
+}
+
+
+@keyframes moveShip {
+    0% {
+        left: -800px; /* Start completely off-screen to the left */
+        transform: translateY(-10px); /* Optional: add a floating effect */
+    }
+    100% {
+        left: 100vw; /* Move completely off-screen to the right */
+        transform: translateY(10px); /* Optional: add a floating effect */
+    }
+}
+
+
+/* Text styling (no animation needed for the text) */
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2; /* Keep the text on top of the ship */
+}
+
+
+.position-relative {
+    position: relative;
+}
+
+
+
+#faq {
+    background-image: url('images/skull.avif');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.286); /* Black overlay with 60% opacity */
+    background-blend-mode: overlay;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+
+.gold-txt {
+    font-size: 3rem;
+    color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.accordion-button {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #000000 !important;
+    color: #ffdd00 !important;
+}
+
+/* Keep the button highlighted when its accordion is open */
+.accordion-button:not(.collapsed) {
+    background-color: #100101 !important;
+    color: #ffdd00 !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 221, 0, 0.5);
+}
+
+/* Accordion body styling */
+.accordion-body {
+    background-color: #444;
+    color: #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Item margin for better spacing */
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+/* Wrapper styling */
+.col-auto {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:1rem;
+    border-radius: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gold-txt {
+        font-size: 2rem;
+    }
+
+    .accordion-button {
+        font-size: 1.2rem;
+    }
+
+    .accordion-body {
+        font-size: 1rem;
+    }
 }
