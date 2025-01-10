@@ -307,11 +307,11 @@ h1 {
 }
 
 
-.gold-txt {
+/* .gold-txt {
     font-size: 3rem;
     color: gold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+} */
 
 .accordion-button {
     background-color: transparent !important; /* Fully transparent background */
