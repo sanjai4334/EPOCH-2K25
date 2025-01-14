@@ -1,0 +1,110 @@
+{
+  "events": [
+    {
+      "name": "Visionaries on Paper",
+      "description": "Step into a realm where innovative ideas meet scholarly expression. This paper presentation event invites visionaries to present their groundbreaking research and creative concepts, sparking intellectual debates and insightful discussions. Share your work, impress the experts, and inspire the audience with your forward-thinking vision.",
+      "rules": [
+        "Each team can have a maximum of two participants. Solo participation is also not allowed.",
+        "Participants must register for the event before the deadline. Late entries will not be entertained.",
+        "The presentation time is limited to 8 minutes, followed by a 2-minute Q&A session.",
+        "Participants must use a PowerPoint presentation (.ppt or .pptx) to complement their talk.",
+        "Papers will be evaluated based on the following: Originality and innovation, Relevance to the theme, Clarity of presentation, Analytical depth and conclusions, Responses during the Q&A session.",
+        "Decisions made by the judges will be final and binding."
+      ],
+      "coordinators": [
+        "P.Kiruba -III",
+        "S.Mithra - III",
+        "P.Jayaswathi - II"
+      ]
+    },
+    {
+      "name": "Pixel Perfection",
+      "description": "Bring your artistic flair and coding expertise to life! This competition challenges you to create a visually appealing, user-friendly, and technically sound web page. Show us your mastery of design tools and programming languages to claim the top spot.",
+      "rules": [
+        "Only solo participation is allowed. Team participation is not permitted.",
+        "Participants must bring their own laptops with the necessary software/tools installed.",
+        "Internet usage is not allowed during the event unless specified otherwise by the organizers.",
+        "A specific theme or problem statement will be provided at the start of the event.",
+        "Designs must strictly adhere to the given theme; deviations may lead to disqualification.",
+        "The use of pre-designed templates or third-party assets is strictly prohibited. All designs must be original.",
+        "Participants should avoid hardcoding external links and ensure compatibility across different browsers.",
+        "The decision of the judges and organizers will be final and binding."
+      ],
+      "coordinators": [
+        "S.Kaviya - III",
+        "R.Immanuvel - III",
+        "K.S.Dharun Vidyakar - II"
+      ]
+    },
+    {
+      "name": "Code Craze",
+      "description": "Get ready to dive into the thrilling world of algorithms and logic! \"CodeCraze\" is a high-energy event where participants race against the clock to solve intriguing coding problems. Bring your A-game, think creatively, and demonstrate your programming expertise to outshine the competition. It's not just a challenge—it's a craze for code!",
+      "rules": [
+        "Only solo participation is allowed. Team participation is not permitted.",
+        "Participants must register prior to the event. On-the-spot registrations may not be entertained.",
+        "Problem statements will be provided at the beginning of the event. These will range in difficulty from basic to advanced.",
+        "Each problem will have a set time limit, and participants are encouraged to attempt as many problems as possible within the given duration.",
+        "Participants may use any programming language of their choice unless otherwise specified in the problem statement.",
+        "Code must be written from scratch during the event. The use of pre-written libraries or templates is allowed only if explicitly permitted."
+      ],
+      "coordinators": [
+        "D.Guna - III",
+        "S.Kavya - III",
+        "P.Hansiga - II"
+      ]
+    },
+    {
+      "name": "Thought Arena",
+      "description": "Step into the arena of ideas where only the sharpest minds prevail. This event tests your ability to think on your feet, express yourself clearly, and collaborate effectively. Debate, deliberate, and make your mark!",
+      "rules": [
+        "Only solo participation is allowed. Each participant will be assessed individually.",
+        "The group discussion will be conducted in English. Participants must communicate only in English during the session.",
+        "The topic for discussion will be provided on the spot by the moderators.",
+        "Participants will be given 2 minutes to think and organize their thoughts before the discussion begins.",
+        "The duration of the group discussion will be 10-15 minutes depending on the number of participants.",
+        "The decision of the judges and moderators will be final and binding."
+      ],
+      "coordinators": [
+        "S.Sanjai - III",
+        "P.Swetha - III",
+        "M.Mythili - II"
+      ]
+    },
+    {
+      "name": "Raaga Quest",
+      "description": "Think you know South Indian cinema songs inside and out? Join Raaga Quest, where quick thinking and a sharp ear are your keys to victory in this engaging and fun-filled guessing game!",
+      "rules": [
+        "Each team can have a maximum of 4 members. Teams with fewer members are also allowed.",
+        "Participants must register their team prior to the event. On-the-spot registrations may not be entertained.",
+        "Teams must report to the venue at least 15 minutes before the event starts.",
+        "Use of mobile phones or any electronic devices during the event is strictly prohibited. Violations will result in disqualification.",
+        "The event coordinators’ and judges’ decisions will be final and binding."
+      ],
+      "coordinators": [
+        "A.Nisar - III",
+        "A.E.PoojaShree - III",
+        "C.R.Rohith - II"
+      ]
+    },
+    {
+      "name": "Hit & Bid League",
+      "description": "Join the action-packed Hit & Bid League, where cricket fans and strategists come together to compete in a mock IPL auction. Plan wisely, spend smartly, and dominate the auction floor!",
+      "rules": [
+        "Each team can have a maximum of 4 members. Teams with fewer members are also allowed.",
+        "Each team will be given a virtual budget to bid for players during the auction.",
+        "The list of players available for bidding will be provided at the beginning of the event.",
+        "Teams must strategize to build a balanced squad while staying within their allocated budget.",
+        "Players will be categorized into different groups (e.g., batsmen, bowlers, all-rounders) with base prices.",
+        "Bidding will be conducted in rounds, and the highest bidder for each player will secure that player.",
+        "Use of mobile phones or any electronic devices during the event is strictly prohibited unless authorized by the organizers.",
+        "Teams must maintain decorum and avoid disrupting the bidding process. Any misconduct will result in penalties or disqualification.",
+        "The event coordinators’ and judges’ decisions will be final and binding."
+      ],
+      "coordinators": [
+        "V.Monish Kumar - IV",
+        "R.Suryaharan - IV",
+        "M.Vigneshwar - IV"
+      ]
+    }
+  ]
+}
