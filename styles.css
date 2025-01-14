@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MapFont';
+    src: url('./fonts/Treamd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     font-family: PirateFont;
 }
@@ -193,16 +200,54 @@ body {
 
 .card-back {
     background: #d4af37;
-    color: #ffe7e700;
+    color: #4d2800;
     transform: rotateY(180deg);
-    padding: 30px;
+    padding: 20px;
+    font-family: 'MapFont';
     font-size: 1.2rem;
-    display: block;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between text and buttons */
     align-items: center;
     text-shadow: none;
 }
 
+.card-back p {
+    font-family: 'MapFont';
+    font-size: 1.5rem;
+    line-height: 23px;
+    flex-grow: 1; /* Allow text to take up available space */
+}
+
+.card-back .button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.pirate-button {
+    background-color: #4d2800;
+    color: #fffff0;
+    padding: 8px 18px;
+    border: 2px solid #ffd700;
+    clip-path: polygon(
+      3% 5%, 10% 3%, 18% 7%, 25% 3%, 32% 5%, 38% 2%, 45% 7%, 52% 3%, 
+      58% 6%, 65% 2%, 72% 5%, 78% 2%, 85% 7%, 90% 4%, 96% 6%, 
+      97% 15%, 94% 22%, 97% 30%, 93% 37%, 97% 45%, 93% 53%, 97% 60%, 
+      94% 68%, 97% 76%, 95% 85%, 90% 93%, 85% 95%, 78% 91%, 71% 95%, 
+      64% 93%, 57% 95%, 50% 91%, 43% 95%, 36% 93%, 29% 95%, 22% 91%, 
+      15% 95%, 8% 93%, 5% 84%, 7% 75%, 3% 67%, 7% 58%, 3% 50%, 
+      7% 43%, 3% 35%, 7% 27%, 3% 18%, 5% 10%, 3% 5%
+    );
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pirate-button:hover {
+    background-color: #5e3200; /* Slightly lighter brown */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  
 #about {
     position: relative;
     background-image: url("images/dragon.jpeg"); /* Set dragon as background image */
