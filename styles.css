@@ -203,19 +203,6 @@ body {
     text-shadow: none;
 }
 
-/* Ensure the images do not overflow into the next section and stay within the bounds of the gallery section */
-.gallery {
-    padding-bottom: 50px; /* Add padding to the bottom of the gallery section */
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 300px; /* Set a maximum height for the images to fit within the section */
-}
-
-
 #about {
     position: relative;
     background-image: url("images/dragon.jpeg"); /* Set dragon as background image */
