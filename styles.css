@@ -452,4 +452,78 @@ h1 {
     color: #fff; /* White color on hover */
     text-decoration: none;
     cursor: pointer;
+  
+#contact{
+    background-image: url('images/beach.jpg');
+    background-size: cover;
+    
+}
+
+.dialogue-box {
+    background: #00060c00; /* Light gray for modern feel */
+    border: 2px solid #61c4f373; /* Dark border for contrast */
+    border-radius: 10px; /* Smooth corners */
+    padding: 10px;
+    width: 550px; /* Fixed width for uniform look */
+    height:325px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    font-size: x-large;
+    position: relative;
+    color:#110101 !important;
+}
+
+.dialogue-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Adjust position relative to the box */
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #5e7082 transparent transparent; /* Arrow matches border */
+}
+
+.dialogue-box ul {
+    padding-left: 20px; /* Indent list items */
+    margin: 0;
+}
+
+.dialogue-box li {
+    margin-bottom: 5px; /* Space between items */
+}
+
+.dialogue-box p {
+    margin: 0;
+    line-height: 1.5; /* Better text spacing */
+}
+
+.dialogue-box em {
+    color: #2b0660; /* Blue for emphasis */
+    font-style: normal; /* Modern look for address */
+}
+
+.moving-ship {
+    position: absolute;
+    top: 55%; /* Lower the ship's vertical position */
+    left: -20%; /* Start off-screen */
+    animation: sail-across 30s linear infinite; /* Run once */
+    width: 300px; /* Increased width for a larger ship */
+    height: auto; /* Maintain aspect ratio */
+    z-index:5; /* Ensure it appears above other elements */
+}
+
+@keyframes sail-across {
+    0% {
+        left: -90%; /* Start off-screen left */
+    }
+    100% {
+        left: 150%; /* Move off-screen right */
+    }
+}
+
+/* Trigger animation when #contact is visible */
+#contact {
+    position: relative;
+    overflow: hidden; /* Prevent the ship from being visible outside bounds */
 }
