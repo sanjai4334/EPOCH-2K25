@@ -74,8 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${eventDetails.description}</p>
             <h3 class='gold-text'>Rules:</h3>
             <ul>${eventDetails.rules.map(rule => `<li>${rule}</li>`).join('')}</ul>
-            <h3 class='gold-text'>Coordinators:</h3>
-            <p>${eventDetails.coordinators.join(', ')}</p>
         `;
         modal.style.display = "flex"; // Ensure modal is displayed as flex to center it
     }
