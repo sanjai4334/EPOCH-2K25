@@ -400,6 +400,67 @@ h1 {
     .accordion-body {
         font-size: 1rem;
     }
+
+    .event-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .card-inner {
+        height: 250px;
+    }
+
+    .card-front, .card-back {
+        font-size: 1rem;
+    }
+
+    .card-back p {
+        font-size: 1rem;
+    }
+
+    .pirate-button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .dialogue-box {
+        width: 90%; /* Adjust width for mobile screens */
+        padding: 15px; /* Adjust padding for mobile screens */
+        padding: 10px;
+    }
+
+    .dialogue-box * *, .dialogue-box * {
+        font-size: 1.5rem; /* Adjust font size for text and list items */
+    }
+
+    .dialogue-box li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dialogue-box li strong {
+        margin-bottom: 5px;
+    }
+
+    #faq .col-auto {
+        width: 100%; /* Stretch content to full width */
+    }
+
+    #home, #about, #events, #faq, #contact {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #about {
+        line-height: 25px;
+    }
+
+    #events .card-inner , #events .card-front , #events .card-back {
+        height: 250px;
+        /* margin: 10px; */
+        font-size: 1rem;
+        padding: 10px;
+    }
 }
 
 /* Modal styling */
@@ -458,6 +519,8 @@ h1 {
 #contact{
     background-image: url('images/beach.png');
     background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /* Prevent x-axis overflow */
 }
 
 .dialogue-box {
