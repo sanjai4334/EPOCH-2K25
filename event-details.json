@@ -39,6 +39,26 @@
       ]
     },
     {
+      "name": "Training on Gitops",
+      "description": "Learn the principles and practices of GitOps, a way to do Kubernetes cluster management and application delivery. This training will cover the basics and advanced topics to help you manage your infrastructure using Git. The training is provided by:<br><br>- Logesh B <a href='https://www.linkedin.com/in/logesh-bommannan' target='_blank'>LinkedIn</a><br>- Manibharathi M <a href='https://www.linkedin.com/in/itsmanibharathi' target='_blank'>LinkedIn</a><br>- Iniyan G <a href='https://www.linkedin.com/in/iniyangs' target='_blank'>LinkedIn</a>",
+      "rules": [
+        "Participants should bring their own laptops with the necessary software/tools installed.",
+        "Participants should have a basic understanding of Git and Kubernetes.",
+        "The training will include both theoretical and practical sessions.",
+        "Participants are encouraged to ask questions and engage in discussions."
+      ]
+    },
+    {
+      "name": "Hands on Training in Machine Learning",
+      "description": "Get hands-on experience with machine learning techniques and tools. This training will guide you through the process of building and deploying machine learning models, with practical exercises and real-world examples. The training is provided by Dr. Shanthakumari R, Associate Professor at Kongu Engineering College, who specializes in machine learning applications.",
+      "rules": [
+        "Participants must bring their own laptops.",
+        "Internet usage is allowed during the event for accessing resources and documentation.",
+        "The training will include both theoretical and practical sessions.",
+        "Participants are encouraged to ask questions and engage in discussions."
+      ]
+    },
+    {
       "name": "Thought Arena",
       "description": "Step into the arena of ideas where only the sharpest minds prevail. This event tests your ability to think on your feet, express yourself clearly, and collaborate effectively. Debate, deliberate, and make your mark!",
       "rules": [
