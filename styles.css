@@ -26,6 +26,8 @@ body {
 
 .title {
     font-size: 6rem;
+    position: relative;
+    z-index: 9999;
 }
 
 .gold-txt {
